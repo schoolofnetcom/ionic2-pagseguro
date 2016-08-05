@@ -1,0 +1,15 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Meu carrinho - R$ {{cart.total}}</ion-title>
+</ion-navbar>
+
+<ion-content padding class="my-cart">
+    <ion-list>
+        <ion-item *ngFor="let o of cart.items">
+            {{o.name}} - R$ {{o.price}}
+        </ion-item>
+    </ion-list>
+    <button (click)="goToCheckout()">Finalizar compra</button>
+</ion-content>

@@ -1,0 +1,14 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Listagem de produtos</ion-title>
+</ion-navbar>
+
+<ion-content padding class="product-list">
+  <ion-list>
+    <ion-item *ngFor="let o of products" (click)="addItem(o)">
+      {{o.name}} - R$ {{o.price}}
+    </ion-item>
+  </ion-list>
+</ion-content>
