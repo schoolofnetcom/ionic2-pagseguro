@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/ionic2/appIonic2PagSeguro" libraries="{ionic2-pagseguro-curso/ionic2/appIonic2PagSeguro/node_modules}" />
+  </component>
+</project>

@@ -93,7 +93,7 @@ class OrdersController extends Controller
 
             $credentials = \PagSeguroConfig::getAccountCredentials(); // getApplicationCredentials()
             $response = $directPaymentRequest->register($credentials);
-            \PagSeguroTransaction::class
+            
             return [
                 'success' => true,
             ];
