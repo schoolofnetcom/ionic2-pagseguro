@@ -10,7 +10,6 @@ use App\Http\Controllers\Controller;
 class OrdersController extends Controller
 {
     public function store(Request $request){
-        redirect()->with()
         $method = $request->get('method');
         $items = $request->get('items');
         $hash = $request->get('hash');
